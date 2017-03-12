@@ -1,0 +1,29 @@
+<md-card>
+    <md-card-title>Tasks</md-card-title>
+    <md-card-subtitle>Please choose the task you are performing:</md-card-subtitle>
+    <md-card-content>
+    <br/>
+    <md-select class="control" placeholder="Task">
+        <md-option *ngFor="let task of tasks" [value]="task.value">
+          {{ task.viewValue }}
+      </md-option>
+    </md-select>
+    </md-card-content>
+  </md-card>
+
+  <md-card>
+    <md-card-title>Turbine</md-card-title>
+    <md-card-subtitle>Please choose the turbine you are entering:</md-card-subtitle>
+    <md-card-content>
+    <br/>
+    <md-select class="control" placeholder="Turbine">
+        <md-option *ngFor="let turbine of turbines" [value]="turbine.value">
+          {{ turbine.viewValue }}
+      </md-option>
+    </md-select>
+    </md-card-content>
+    <md-card-actions align="right">
+     <button (click)="requestEntry()" md-fab><md-icon>check</md-icon></button>
+    <br/>
+   </md-card-actions>
+  </md-card>

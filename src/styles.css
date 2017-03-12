@@ -1,0 +1,4 @@
+@import '~@angular/material/core/theming/prebuilt/indigo-pink.css';
+/* You need a minimum font size of 15px on IOS Safari to avoid zooming automatically */
+BODY {font-size:16px}
+.centerControl {width:200px}

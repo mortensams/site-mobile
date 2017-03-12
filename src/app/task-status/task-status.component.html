@@ -1,0 +1,13 @@
+
+  <md-card>
+    <md-card-title>Task in progress</md-card-title>
+    <md-card-content>
+    You were authorized to enter the turbine at:<br/><br/>
+    {{enterTime}}<br/><br/>
+    For safety reasons, you must click Leave, once you have left the Turbine.
+    </md-card-content>
+    <md-card-actions align="right">
+     <button (click)="leave()" md-fab>Leave</button>
+    <br/>
+   </md-card-actions>
+  </md-card>

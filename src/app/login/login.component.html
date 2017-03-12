@@ -1,0 +1,20 @@
+<md-card align="center">
+
+    <md-card-title>Login</md-card-title>
+    <md-card-subtitle>Please provide your credentials</md-card-subtitle>
+    <md-card-content>
+    
+    <md-input-container>
+      <input mdInput style="width:250px" placeholder="Username" value=""/>
+    </md-input-container>
+    <br/>
+    <md-input-container>
+      <input mdInput style="width:250px" type="password" placeholder="Password" value=""/>
+    </md-input-container>
+    
+    </md-card-content>
+    <md-card-actions>
+     <button (click)="login()" md-fab><md-icon>check</md-icon></button>
+    <br/>
+   </md-card-actions>
+  </md-card>
